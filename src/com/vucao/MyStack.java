@@ -2,10 +2,16 @@ package com.vucao;
 
 import java.util.Arrays;
 
-public class Stack
+public class MyStack
 {
-    private String[] stack = new String[1000];
-    private int currentIndex = 0;
+    private String[] stack;
+    private int currentIndex;
+
+    public MyStack()
+    {
+        this.stack = new String[1000];
+        this.currentIndex = 0;
+    }
 
     public void push(String s)
     {
@@ -19,9 +25,5 @@ public class Stack
         }
     }
 
-    @Override
-    public String toString()
-    {
-        return Arrays.toString(stack);
-    }
+
 }
