@@ -37,9 +37,15 @@ public class MyStack
         }
     }
 
-    public int getLength()
+    public String getLength()
     {
-        return this.currentIndex;
+        if (currentIndex==0)
+        {
+            return "There are no items in your Stack.";
+
+        }
+        return Integer.toString(currentIndex);
+
     }
 
     @Override
