@@ -37,5 +37,10 @@ public class MyStack
         }
     }
 
+    public int getLength()
+    {
+        return this.currentIndex;
+    }
+
 
 }
