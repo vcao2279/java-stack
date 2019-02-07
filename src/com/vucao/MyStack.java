@@ -42,5 +42,14 @@ public class MyStack
         return this.currentIndex;
     }
 
-
+    @Override
+    public String toString()
+    {
+        String[] rtnArr = new String[currentIndex];
+        for (int i=0; i<currentIndex; i++)
+        {
+            rtnArr[i] = stack[i];
+        }
+        return Arrays.toString(rtnArr);
+    }
 }
