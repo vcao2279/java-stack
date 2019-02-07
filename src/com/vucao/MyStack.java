@@ -25,5 +25,17 @@ public class MyStack
         }
     }
 
+    public void pop()
+    {
+        if (currentIndex == 0)
+        {
+            System.out.println("There are no items in your Stack.");
+        } else
+        {
+            stack[currentIndex] = null;
+            currentIndex--;
+        }
+    }
+
 
 }
